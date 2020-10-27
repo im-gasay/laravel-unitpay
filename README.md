@@ -11,19 +11,32 @@ Accept payments via UnitPay ([unitpay.ru](https://unitpay.ru/)) using this Larav
 
 - receive payments, adding just the two callbacks
 
-#### Laravel >= 7.*, PHP >= 7.2.5
-
-> To use the package for Laravel 6.* use the [2.x](https://github.com/maksa988/laravel-unitpay/tree/2.x) branch
-
-> To use the package for Laravel 5.* use the [1.x](https://github.com/maksa988/laravel-unitpay/tree/1.x) branch
+#### Laravel >= 8.*, PHP >= 7.3
 
 ## Installation
 
-Require this package with composer.
 
-``` bash
-composer require "maksa988/laravel-unitpay:2.*"
-```
+Add repository in your composer.json
+"repositories": [
+    {
+        "type":"package",
+        "package": {
+          "name": "Maksa988/laravel-unitpay",
+          "version":"master",
+          "source": {
+              "url": "https://github.com/im-gasay/laravel-unitpay.git",
+              "type": "git",
+              "reference":"master"
+            }
+        }
+    }
+],
+
+and require package 
+
+"require": {
+    "Maksa988/laravel-unitpay": "master"
+}
 
 If you don't use auto-discovery, add the ServiceProvider to the providers array in `config/app.php`
 
