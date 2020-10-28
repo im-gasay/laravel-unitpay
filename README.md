@@ -17,6 +17,7 @@ Accept payments via UnitPay ([unitpay.ru](https://unitpay.ru/)) using this Larav
 
 
 Add repository in your composer.json
+```json
 "repositories": [
     {
         "type":"package",
@@ -31,6 +32,7 @@ Add repository in your composer.json
         }
     }
 ],
+```
 
 and require package 
 
